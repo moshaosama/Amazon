@@ -1,0 +1,59 @@
+.body{
+  background-color: #EEE;
+}
+#Navbar {
+  justify-content: space-around;
+}
+#Input {
+  width: 50pc;
+}
+#Btn_Signin {
+  width: 22pc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3pc;
+  font-weight: bold;
+  font-size: 20px;
+}
+#Btn_Content {
+  width: 23pc;
+  text-align: start;
+}
+#Nav2 {
+  height: 30px;
+}
+#Btn_Nav2 {
+  position: relative;
+  bottom: 12px;
+}
+#Card {
+  height: 90%;
+}
+.Empty {
+  position: absolute;
+  left: 30pc;
+  top: 8pc;
+}
+.New_Account::after {
+  content: "";
+  width: 14%;
+  background-color: transparent;
+  display: block;
+  height: 1px;
+  border-top: 1px solid black;
+  position: absolute;
+  top: 26.4pc;
+  left: 30pc;
+}
+.New_Account::before{
+  content: "";
+  width: 14%;
+  background-color: transparent;
+  display: block;
+  height: 1px;
+  border-top: 1px solid black;
+  position: absolute;
+  top: 26.4pc;
+  left: 52.3pc;
+}
