@@ -1,5 +1,5 @@
-.body{
-  background-color: #EEE;
+.body {
+  background-color: #eee;
 }
 #Navbar {
   justify-content: space-around;
@@ -46,7 +46,7 @@
   top: 26.4pc;
   left: 30pc;
 }
-.New_Account::before{
+.New_Account::before {
   content: "";
   width: 14%;
   background-color: transparent;
@@ -56,4 +56,44 @@
   position: absolute;
   top: 26.4pc;
   left: 52.3pc;
+}
+#Amazon::before {
+  content: "ama";
+  background-color: white;
+  width: 48pc;
+  height: 44pc;
+  font-weight: bolder;
+  font-size: 5pc;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transition: width 2s;
+  border-right: 5px solid;
+}
+#Amazon:hover::before {
+  width: 0pc;
+}
+#Amazon::after {
+  content: "zon";
+  background-color: white;
+  width: 46.9pc;
+  height: 44pc;
+  font-weight: bolder;
+  font-size: 5pc;
+  display: flex;
+  align-items: center;
+  margin: -44pc 48pc;
+  transition: margin 2s;
+  border-left: 5px solid;
+}
+#Amazon:hover::after {
+  margin: -44pc 95pc;
+}
+@keyframes MoveIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.1);
+  }
 }
