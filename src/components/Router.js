@@ -6,6 +6,7 @@ import New_Account from "./New_Account";
 import Show from "./Show";
 import Pay from "./Pay";
 import Order from "./Order";
+import Hello from "./Chartjs";
 
 function Router_Pages() {
   return (
@@ -14,6 +15,7 @@ function Router_Pages() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/Cart" element={<Cart />}></Route>
+          <Route path="/TodaysDells" element={<Hello />}></Route>
           <Route path="/SignIn" element={<Signin />}></Route>
           <Route path="/SignIn/Order" element={<Order />}></Route>
           <Route path="Cart/SignIn" element={<Signin />}></Route>

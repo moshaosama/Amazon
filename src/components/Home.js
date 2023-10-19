@@ -154,7 +154,7 @@ function Home() {
                 </Offcanvas.Body>
               </Offcanvas>
               <Nav.Link id="Btn_Nav2" className="text-light">
-                Today's Deals
+                <Link to={"TodaysDells"}>Today's Deals</Link>
               </Nav.Link>
               <Nav.Link id="Btn_Nav2" className="text-light">
                 Customer Service
@@ -295,6 +295,157 @@ function Home() {
               })}
             </Row>
           </Container>
+        </div>
+        <div>
+          <footer className="bg-dark text-center text-light">
+            <Container className=" p-4">
+              <section className="mb-4">
+                <Link
+                  target="_blank"
+                  to={"https://www.facebook.com/mohamedosamakin/"}
+                  className="btn btn-outline-light m-1"
+                  style={{ borderRadius: "10pc" }}
+                >
+                  <i className="fab fa-facebook"></i>
+                </Link>
+                <Link
+                  target="_blank"
+                  to={"https://twitter.com/mohamedosfekry"}
+                  className="btn btn-outline-light m-1"
+                  style={{ borderRadius: "10pc" }}
+                >
+                  <i className="fab fa-twitter"></i>
+                </Link>
+                <Link
+                  target="_blank"
+                  to={"https://www.instagram.com/this_fekry/"}
+                  className="btn btn-outline-light m-1"
+                  style={{ borderRadius: "10pc" }}
+                >
+                  <i className="fab fa-instagram"></i>
+                </Link>
+                <Link
+                  target="_blank"
+                  to={"https://www.linkedin.com/in/thisfekry/"}
+                  className="btn btn-outline-light m-1"
+                  style={{ borderRadius: "10pc" }}
+                >
+                  <i className="fab fa-linkedin-in"></i>
+                </Link>
+                <Link
+                  target="_blank"
+                  to={"https://github.com/moshaosama"}
+                  className="btn btn-outline-light m-1"
+                  style={{ borderRadius: "10pc" }}
+                >
+                  <i className="fab fa-github"></i>
+                </Link>
+              </section>
+              <section>
+                <Row className="d-flex justify-content-center">
+                  <Col>
+                    <p>Sign up for our newsletter</p>
+                  </Col>
+                  <Col>
+                    <Form>
+                      <Form.Control type="text" placeholder="Email Address" />
+                    </Form>
+                  </Col>
+                  <Col>
+                    <div className="btn btn-outline-light">Subscribe</div>
+                  </Col>
+                </Row>
+              </section>
+              <section className="p-4">
+                <p>
+                  <b>Amazon App</b>
+                </p>
+              </section>
+              <section>
+                <Row>
+                  <Col>
+                    <h5 className="text-uppercase">Products</h5>
+                    <ul className="list-unstyled">
+                      <li>
+                        <b>Html</b>
+                      </li>
+                      <li>
+                        <b>Css</b>
+                      </li>
+                      <li>
+                        <b>JavaScript</b>
+                      </li>
+                      <li>
+                        <b>React</b>
+                      </li>
+                      <li>
+                        <b>Redux</b>
+                      </li>
+                      <li>
+                        <b>Bootstrap</b>
+                      </li>
+                    </ul>
+                  </Col>
+                  <Col>
+                    <h5 className="text-uppercase">USEFUL LINKS</h5>
+                    <ul className="list-unstyled">
+                      <li style={{ margin: "10px" }}>
+                        <b className="text-secondary">Pricing</b>
+                      </li>
+                      <li style={{ margin: "10px" }}>
+                        <b className="text-secondary">Settings</b>
+                      </li>
+                      <li style={{ margin: "10px" }}>
+                        <b className="text-secondary">Orders</b>
+                      </li>
+                      <li style={{ margin: "10px" }}>
+                        <b className="text-secondary">Help</b>
+                      </li>
+                    </ul>
+                  </Col>
+                  <Col>
+                    <h5 className="text-uppercase">Contact</h5>
+                    <ul className="list-unstyled">
+                      <li style={{ margin: "10px" }}>
+                        <i className="fas fa-home"></i>
+                        <b className="text-secondary">
+                          {" "}
+                          6 October, Elhosry ,Karma City
+                        </b>
+                      </li>
+                      <li style={{ margin: "10px" }}>
+                        <i className="fas fa-envelope"></i>
+                        <b className="text-secondary">
+                          {" "}
+                          mohamedOsFekry@gmail.com
+                        </b>
+                      </li>
+                      <li style={{ margin: "10px" }}>
+                        <i className="fas fa-phone"></i>
+                        <b
+                          className="text-secondary"
+                          style={{ margin: "3.2pc" }}
+                        >
+                          {" "}
+                          +20 1004365707
+                        </b>
+                      </li>
+                      <li>
+                        <i className="fas fa-print"></i>
+                        <b
+                          className="text-secondary"
+                          style={{ margin: "3.2pc" }}
+                        >
+                          {" "}
+                          +20 1004365707
+                        </b>
+                      </li>
+                    </ul>
+                  </Col>
+                </Row>
+              </section>
+            </Container>
+          </footer>
         </div>
       </div>
     </>
