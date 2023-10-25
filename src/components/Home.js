@@ -27,24 +27,7 @@ function Home() {
 
   return (
     <>
-      <div id="Amazon">
-        <div
-          className="btn btn-dark"
-          style={{
-            position: "absolute",
-            left: "44pc",
-            top: "25pc",
-            width: "8pc",
-          }}
-          onClick={() => {
-            document.getElementById("Amazon").style.display = "none";
-            document.getElementById("App").style.display = "block";
-          }}
-        >
-          Start
-        </div>
-      </div>
-      <div style={{ display: "none" }} id="App">
+      <div>
         <div className="bg-dark">
           <Container>
             <Navbar className="d-flex" id="Navbar">
@@ -60,7 +43,10 @@ function Home() {
               </Navbar.Brand>
               <Nav>
                 <Nav.Link className="text-light">
-                  <Link to={"/"} className="text-light text-decoration-none">
+                  <Link
+                    to={"/Home"}
+                    className="text-light text-decoration-none"
+                  >
                     Home
                   </Link>
                 </Nav.Link>
@@ -217,7 +203,13 @@ function Home() {
                   <Card.Title>
                     <b>electronics</b>
                   </Card.Title>
-                  <div className="btn btn-primary" style={{ width: "7pc" }}>
+                  <div
+                    className="btn btn-primary"
+                    style={{
+                      width: "7pc",
+                      boxShadow: "0px 0px 15px 1px white",
+                    }}
+                  >
                     Shop Now
                   </div>
                 </Card>

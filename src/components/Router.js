@@ -7,26 +7,31 @@ import Show from "./Show";
 import Pay from "./Pay";
 import Order from "./Order";
 import Hello from "./Chartjs";
+import Start_App from "./Start";
 
 function Router_Pages() {
   return (
     <>
       <div>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/Cart" element={<Cart />}></Route>
-          <Route path="/TodaysDells" element={<Hello />}></Route>
-          <Route path="/SignIn" element={<Signin />}></Route>
-          <Route path="/SignIn/Order" element={<Order />}></Route>
-          <Route path="Cart/SignIn" element={<Signin />}></Route>
-          <Route path="SignIn/NewAccount" element={<New_Account />}></Route>
+          <Route path="/" element={<Start_App />}></Route>
+          <Route path="/Home" element={<Home />}></Route>
+          <Route path="/Home/Cart" element={<Cart />}></Route>
+          <Route path="/Home/TodaysDells" element={<Hello />}></Route>
+          <Route path="/Home/SignIn" element={<Signin />}></Route>
+          <Route path="/Home/SignIn/Order" element={<Order />}></Route>
+          <Route path="/Home/Cart/SignIn" element={<Signin />}></Route>
           <Route
-            path="Cart/SignIn/NewAccount"
+            path="/Home/SignIn/NewAccount"
             element={<New_Account />}
           ></Route>
-          <Route path="/:elid" element={<Show />}></Route>
-          <Route path="/:elid/Pay" element={<Pay />}></Route>
-          <Route path="signIn/Order/Pay" element={<Pay />}></Route>
+          <Route
+            path="/Home/Cart/SignIn/NewAccount"
+            element={<New_Account />}
+          ></Route>
+          <Route path="/Home/:elid" element={<Show />}></Route>
+          <Route path="/Home/:elid/Pay" element={<Pay />}></Route>
+          <Route path="/Home/signIn/Order/Pay" element={<Pay />}></Route>
         </Routes>
       </div>
     </>
